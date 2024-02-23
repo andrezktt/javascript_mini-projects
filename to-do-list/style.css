@@ -54,7 +54,7 @@ body{
    background-color: var(--terciary);
    border: 1px solid var(--terciary);
    border-radius: 0.5rem;
-   color: var(--bright);
+   color: white;
    font-family: 'Inter';
    font-size: .75rem;;
 }
