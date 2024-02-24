@@ -7,7 +7,7 @@ const container = document.querySelector('.container');
 
 pushTask.addEventListener('click', (e) => {
    if(inputTask.value.length == 0 ||taskDetails.value.length == 0) {
-      alert("Por avor, insira uma tarefa e seus detalhes ou etapas.");
+      alert("Por avor, insira uma tarefa assim como seus detalhes e/ou etapas.");
    } else {
       tasks.innerHTML += `
       <div class="task">
