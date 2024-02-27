@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Stylesheets -->
+   <link rel="stylesheet" href="style.css">
+   <!-- Google Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   <!-- Title -->
+   <title>Product Filter and Search</title>
+</head>
+<body>
+   <div class="wrapper">
+      <div class="search_container">
+         <input type="search" name="" id="search_input" class="search_input" placeholder="Search product name here...">
+         <button id="btn_search" class="btn_search">Search</button>
+      </div>
+      <div id="btn_select" class="btn_select">
+         <button class="btn_value" onclick="filterProduct('all')">All</button>
+         <button class="btn_value" onclick="filterProduct('Survival-Horror')">Survival-Horror</button>
+         <button class="btn_value" onclick="filterProduct('Soulslike')">Soulslike</button>
+         <button class="btn_value" onclick="filterProduct('RPG')">RPG</button>
+         <button class="btn_value" onclick="filterProduct('FPS')">FPS</button>
+      </div>
+      <div id="products"></div>
+   </div>
+   <!-- Script -->
+   <script src="script.js"></script>
+</body>
+</html>
