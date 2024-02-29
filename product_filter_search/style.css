@@ -89,8 +89,7 @@ body {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
-   background-color: #eee;
-   border: 2px solid var(--main_light);
+   background-color: #fff;
    width: 100%;
    min-width: 300px;
    max-width: 400px;
@@ -103,9 +102,8 @@ body {
 }
 
 .card:hover {
-   background-color: #ddd;
    outline: 2px solid var(--main);
-   transition: ease .1s;
+   background-color: #ffffff;
    font-weight: bold;
 }
 
@@ -125,15 +123,36 @@ img {
 
 .container h6 {
    background-color: var(--main);
+   border: 2px solid var(--main);
    color: var(--light);
-   padding: .25rem .5rem;
+   padding: .5rem .75rem;
    border-radius: 50px;
    font-size: .75rem;
+   font-weight: bolder;
    margin-left: 1rem;
+}
+
+.container h6:hover {
+   background-color: transparent;
+   border: 2px solid var(--main);
+   transition: .25s;
+   color: var(--main);
 }
 
 .product_name {
    font-weight: bold;
+   border: 2px solid var(--main);
+   color: var(--main);
+   padding: .5rem .75rem;
+   width: 80%;
+   text-align: center;
+   border-radius: 50px;
+}
+
+.product_name:hover {
+   background-color: var(--main);
+   color: var(--light);
+   transition: ease .25s;
 }
 
 .hide {
@@ -166,5 +185,13 @@ img {
    }
    img {
       height: 125px;
+   }
+   .container h6 {
+      padding: .25rem .5rem;
+      font-size: .6rem;
+   }
+   .product_name {
+      font-size: .6rem;
+      padding: .25rem .75rem;
    }
 }
