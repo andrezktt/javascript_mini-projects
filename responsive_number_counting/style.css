@@ -1,0 +1,128 @@
+
+* {
+   margin: 0;
+   padding: 0;
+   border: none;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+}
+
+:root {
+   --primary: #059669;
+   --secondary: #065f46;
+   --terciary: #34d399;
+   --background: #111827;
+   --background_2: #1f2937;
+   --light: #f3f4f6
+}
+
+body {
+   background-color: var(--background);
+   color: var(--light);
+}
+
+.wrapper {
+   position: absolute;
+   width: 80vw;
+   transform: translate(-50%, -50%);
+   top: 50%;
+   left: 50%;
+   display: flex;
+   justify-content: space-around;
+   gap: 10px;
+}
+
+.container {
+   width: 28vmin;
+   min-width: 100px;
+   min-height: 100px;
+   height: 28vmin;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   padding: 1rem 0;
+   position: relative;
+   font-size: 16px;
+   border-radius: 1rem;
+   background-color: var(--background_2);
+   border-bottom: 10px solid var(--primary);
+}
+
+i {
+   color: var(--primary);
+   font-size: 3.5rem;
+   text-align: center;
+}
+
+span.num {
+   color: var(--light);
+   display: grid;
+   place-items: center;
+   font-weight: 600;
+   font-size: 3.5rem;
+}
+
+span.text {
+   color: var(--light);
+   font-size: 1rem;
+   text-align: center;
+   pad: .7rem 0;
+   font-weight: 400;
+   line-height: 0;
+}
+
+@media screen and (max-width: 1024px) {
+   .wrapper {
+      width: 85vw;
+   }
+   .container {
+      height: 26vmin;
+      min-height: 26vmin;
+      width: 26vmin;
+      min-width: 22vmin;
+      font-size: 12px;
+   }
+   i {
+      font-size: 3rem;
+   }
+   span.num {
+      font-size: 3rem;
+   }
+   span.text {
+      font-size: 1rem;
+   }
+}
+@media screen and (max-width: 768px) {
+   .wrapper {
+      width: 90vw;
+      flex-wrap: wrap;
+      gap: 30px;
+   }
+   .container {
+      width: calc(50% - 40px);
+      height: 30vmin;
+      min-height: 200px;
+      min-width: 200px;
+      font-size: 14px;
+   }
+}
+@media screen and (max-width: 480px) {
+   .wrapper {
+      gap: 15px;
+   }
+   .container {
+      width: 100%;
+      height: 35vmin;
+      min-height: 35vmin;
+      font-size: 8px;
+   }
+   i {
+      font-size: 2rem;
+   }
+   span.num {
+      font-size: 2rem;
+   }
+   span.text {
+      font-size: .75rem;
+   }
+}
